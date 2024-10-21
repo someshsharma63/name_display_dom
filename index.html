@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name display on screen</title>
+</head>
+<body>
+    <div id="formdata">
+        <h1>Enter your name</h1>
+            <input type="text" id="username">
+            <button id="btn">ClickMe</button>
+    </div>
+
+    <div id="newdata">
+        
+    </div>
+</body>
+</html>
+
+<script>
+  
+    let button=document.getElementById("btn");
+    button.addEventListener('click',()=>
+{
+    let names=document.getElementById("username").value;
+   let newcontent=document.getElementById("newdata");
+   newcontent.append("  ",names)  
+})
+
+
+
+</script>
